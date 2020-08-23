@@ -1,0 +1,208 @@
+:root {
+	--title-text-color: #212121;
+	--primary-text-color: #757575;
+	--accent-color: #2196f3;
+	--hero-text-color: #ffffff;
+	--first-background-color: #ffffff;
+	--second-background-color: #f5f4fa;
+	--hero-background-color: #2f303a;
+	--header-logo-color: #000000;
+	--footer-logo-color: #ffffff;
+	--footer-background-color: #2f303a;
+	--footer-link-color: rgba(255, 255, 255, 0.6);
+	--button-background-color: #f5f4fa;
+}
+
+body {
+	background-color: var(--first-background-color);
+	font-family: "Roboto", "Arial", "Verdana", sans-serif;
+	font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.list {
+	list-style: none;
+}
+
+.logo {
+	font-family: "Raleway", "Arial", "Verdana", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	letter-spacing: 0.03em;
+}
+
+.logo.header {
+	color: var(--header-logo-color);
+}
+
+.logo > span {
+	color: var(--accent-color);
+}
+
+.site-nav .link,
+.contacts {
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: var(--title-text-color);
+}
+
+.contacts .link {
+	color: var(--primary-text-color);
+}
+
+.hero {
+	background-color: var(--footer-background-color);
+	text-align: center;
+}
+
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 60px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--hero-text-color);
+}
+
+.button {
+	border-color: transparent;
+	border-radius: 4px;
+}
+
+.hero .button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px; /* identical to box height, or 187% */
+	/* display: flex;
+	align-items: center; */
+	letter-spacing: 0.06em;
+	color: var(--hero-text-color);
+	background-color: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.filter-list .button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px; /* identical to box height, or 162% */
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+	background-color: var(--button-background-color);
+}
+
+.filter-list .button:hover,
+.filter-list .button:focus {
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	color: var(--hero-text-color);
+	background-color: var(--accent-color);
+}
+
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+}
+
+/* TODO:  invisible heading */
+.section-title.invisible {
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.feature-list .title {
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--title-text-color);
+}
+
+.feature-list .item-text {
+	line-height: 24px; /* or 171% */
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+}
+
+.team-list .title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px; /* identical to box height */
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+}
+
+.team-list .item-text {
+	font-size: 16px;
+	line-height: 19px; /* identical to box height */
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+}
+
+.site-nav .active {
+	color: var(--accent-color);
+}
+
+.portfolio-list .title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 36px; /* identical to box height, or 200% */
+	letter-spacing: 0.06em;
+	color: var(--title-text-color);
+}
+
+.portfolio-list .item-text {
+	font-size: 16px;
+	line-height: 30px; /* identical to box height, or 187% */
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+}
+
+.team-list > .item,
+.portfolio-list > .item {
+	text-align: center;
+}
+
+.team-section {
+	background-color: var(--second-background-color);
+}
+
+.footer-section {
+	background-color: var(--footer-background-color);
+}
+
+.logo.footer,
+.address-item {
+	color: var(--footer-logo-color);
+}
+
+.address {
+	font-style: normal;
+	line-height: 24px; /* or 171% */
+	letter-spacing: 0.03em;
+}
+
+.address .link {
+	color: var(--footer-link-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.address .link:hover,
+.address .link:focus {
+	color: var(--accent-color);
+}
