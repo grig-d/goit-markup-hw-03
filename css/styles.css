@@ -117,6 +117,7 @@ body {
 /* TODO:  invisible heading */
 .section-title.invisible {
 	color: rgba(0, 0, 0, 0.1);
+	font-size: 0px;
 }
 
 .feature-list .title {
