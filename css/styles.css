@@ -75,9 +75,8 @@ img {
 
 .site-nav,
 .contacts {
-display: inline-flex;
+	display: inline-flex;
 }
-
 
 .nav-item:not(:last-child) {
 	margin-right: 50px;
@@ -121,7 +120,6 @@ display: inline-flex;
 	text-align: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
-
 }
 
 .hero-title {
@@ -229,23 +227,48 @@ display: inline-flex;
 	margin-right: 30px;
 }
 
+.site-nav .active {
+	color: var(--accent-color);
+}
+
+.team-list {
+	flex-wrap: wrap;
+}
+
 .team-list .title {
+	margin-top: 30px;
+	margin-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19; /* identical to box height */
-	text-align: center;
 	color: var(--title-text-color);
 }
 
 .team-list .item-text {
+	margin-bottom: 30px;
 	font-size: 16px;
 	line-height: 1.19; /* identical to box height */
-	text-align: center;
 	color: var(--primary-text-color);
 }
 
-.site-nav .active {
-	color: var(--accent-color);
+.team-list > .item {
+	width: calc((100% - 30px * 3) / 4);
+	text-align: center;
+	background-color: var(--first-background-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.team-list > .item:not(:nth-child(4n)) {
+	margin-right: 30px;
+}
+
+.portfolio-list > .item {
+	text-align: center;
+}
+
+.team-section {
+	background-color: var(--second-background-color);
 }
 
 .portfolio-list .title {
@@ -260,15 +283,6 @@ display: inline-flex;
 	font-size: 16px;
 	line-height: 1.87; /* identical to box height, or 187% */
 	color: var(--primary-text-color);
-}
-
-.team-list > .item,
-.portfolio-list > .item {
-	text-align: center;
-}
-
-.team-section {
-	background-color: var(--second-background-color);
 }
 
 .footer-section {
@@ -304,9 +318,35 @@ display: inline-flex;
 	color: var(--accent-color);
 }
 
-/*  */
+/* start */
+.experiment-section {
+	width: 1200px;
+	height: 100px;
+	background-color: tan;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
 
-/* li {
-    display: inline-block;
-    margin-right: 15px;
-} */
+.margin-15 {
+	width: 15px;
+	height: 100px;
+	background-color: tomato;
+}
+
+.div-1 {
+	width: 270px;
+	height: 100px;
+}
+
+.div-2 {
+	width: 570px;
+	height: 100px;
+}
+
+.margin-30 {
+	width: 30px;
+	height: 100px;
+	background-color: teal;
+}
+/* end */
