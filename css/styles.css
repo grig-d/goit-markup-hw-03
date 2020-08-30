@@ -17,9 +17,42 @@ body {
 	background-color: var(--first-background-color);
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
-    font-weight: 400;
+	font-weight: 400;
 	font-size: 14px;
 	letter-spacing: 0.03em;
+}
+
+.header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: rgba(0, 128, 128, 0.2);
+}
+
+.container {
+	background-color: rgba(210, 180, 140, 0.5);
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-header {
+	align-items: center;
+}
+
+.flexbox {
+	display: flex;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+
+.flexbox.page-header {
+	justify-content: flex-end;
 }
 
 .link {
@@ -27,7 +60,14 @@ body {
 }
 
 .list {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+
+.nav-item:not(:last-child) {
+	margin-right: 50px;
 }
 
 .logo {
@@ -39,11 +79,12 @@ body {
 	letter-spacing: 0.03em;
 }
 
-.logo.header {
+.logo.logo-header {
+	margin-right: 93px;
 	color: var(--header-logo-color);
 }
 
-.logo > span {
+.logo > .logo-span {
 	color: var(--accent-color);
 }
 
@@ -59,8 +100,10 @@ body {
 	color: var(--primary-text-color);
 }
 
-.hero {
+.hero-background {
 	background-color: var(--footer-background-color);
+}
+.hero {
 	text-align: center;
 }
 
@@ -154,7 +197,7 @@ body {
 .portfolio-list .title {
 	font-weight: 700;
 	font-size: 18px;
-	line-height: 2.0; /* identical to box height, or 200% */
+	line-height: 2; /* identical to box height, or 200% */
 	letter-spacing: 0.06em;
 	color: var(--title-text-color);
 }
@@ -178,7 +221,7 @@ body {
 	background-color: var(--footer-background-color);
 }
 
-.logo.footer,
+.logo.logo-footer,
 .address-item {
 	color: var(--footer-logo-color);
 }
