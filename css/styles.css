@@ -63,11 +63,20 @@ img {
 }
 
 .list {
-	display: inline-flex;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
+
+.title,
+.item-text {
+	margin: 0;
+}
+
+.site-nav {
+display: inline-flex;
+}
+
 
 .nav-item:not(:last-child) {
 	margin-right: 50px;
@@ -143,6 +152,10 @@ img {
 	padding-bottom: 94px;
 }
 
+.feature-section {
+	padding-top: 94px;
+}
+
 .filter-list .button {
 	font-weight: 500;
 	font-size: 16px;
@@ -161,6 +174,7 @@ img {
 
 .section-title {
 	margin-top: 0;
+	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -171,6 +185,7 @@ img {
 /* TODO:  invisible heading */
 .section-title.invisible {
 	color: rgba(0, 0, 0, 0.1);
+	margin-bottom: 0;
 	font-size: 0px;
 }
 
@@ -190,23 +205,20 @@ img {
 }
 
 .feature-list .item-text {
-	line-height: 1.71; /* or 171% */
+	line-height: 24px; /* or 171% */
 	color: var(--primary-text-color);
-}
-
-.what-section {
-	text-align: center;
+	margin-top: 10px;
 }
 
 .what-list {
-	background-color: rgba(0, 128, 128, 0.2);
+	flex-wrap: wrap;
 }
 
 .what-item {
-	width: calc((100%-2 * 30px) / 3);
+	width: calc((100% - 2 * 30px) / 3);
 }
 
-.what-item:not(:last-child) {
+.what-item:not(:nth-child(3n)) {
 	margin-right: 30px;
 }
 
