@@ -44,6 +44,10 @@ img {
 	padding-bottom: 25px;
 }
 
+.header-border {
+	border-bottom: 1px solid #ECECEC;;
+}
+
 .flexbox {
 	display: flex;
 }
@@ -200,6 +204,12 @@ img {
 
 .feature-item:not(:last-child) {
 	margin-right: 30px;
+}
+
+.feature-item > .title {
+	font-size: 14px;
+	letter-spacing: 0.03em;
+
 }
 
 .feature-list .title {
