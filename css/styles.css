@@ -165,13 +165,25 @@ img {
 	padding-top: 94px;
 }
 
+.filter-list {
+	display: flex;
+	margin-bottom: 50px;
+	justify-content: center;
+}
+
 .filter-list .button {
+	padding: 6px 22px;
+	border: none;
+	text-align: center;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62; /* identical to box height, or 162% */
-	text-align: center;
 	color: var(--title-text-color);
 	background-color: var(--button-background-color);
+}
+
+.filter-item:not(:last-child) {
+	margin-right: 8px;
 }
 
 .filter-list .button:hover,
@@ -273,8 +285,9 @@ img {
 	margin-right: 30px;
 }
 
-.portfolio-list > .item {
+.portfolio-item {
 	text-align: center;
+	border: 1px solid #EEEEEE;
 }
 
 .team-section {
