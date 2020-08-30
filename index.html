@@ -12,7 +12,7 @@
 		<title>WebStudio</title>
 	</head>
 	<body>
-		<header class="header">
+		<header>
 			<div class="container flexbox page-header">
 				<nav class="navigation">
 					<!-- logo -->
@@ -47,28 +47,28 @@
 			</div>
 
 			<!-- features section -->
-			<div class="container">
-				<section>
+			<div class="container flexbox">
+				<section class="section feature-section">
 					<!-- invisible heading -->
 					<h2 class="section-title invisible">Наши Особенности</h2>
-					<ul class="feature-list list">
-						<li>
+					<ul class="feature-list flexbox list">
+						<li class="feature-item">
 							<h3 class="title">Внимание к деталям</h3>
 							<p class="item-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
 						</li>
-						<li>
+						<li class="feature-item">
 							<h3 class="title">Пунктуальность</h3>
 							<p class="item-text">
 								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 							</p>
 						</li>
-						<li>
+						<li class="feature-item">
 							<h3 class="title">Планирование</h3>
 							<p class="item-text">
 								Равным образом консультация с широким активом в значительной степени обуславливает.
 							</p>
 						</li>
-						<li>
+						<li class="feature-item">
 							<h3 class="title">Современные технологии</h3>
 							<p class="item-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
 						</li>
@@ -77,20 +77,22 @@
 			</div>
 
 			<!-- What are we doing section -->
-			<div class="container">
-				<section>
+			<div class="container flexbox">
+				<section class="section what-section">
 					<h2 class="section-title">Чем мы занимаемся</h2>
-					<ul class="what-list list">
-						<li><img src="./images/img1.jpg" width="370" alt="Две руки на клавиатуре настольного компьютера" /></li>
-						<li><img src="./images/img2.jpg" width="370" alt="Мобильный телефон в левой руке" /></li>
-						<li><img src="./images/img3.jpg" width="370" alt="Планшет в левой руке" /></li>
+					<ul class="what-list flexbox list">
+						<li class="what-item">
+							<img src="./images/img1.jpg" width="370" alt="Две руки на клавиатуре настольного компьютера" />
+						</li>
+						<li class="what-item"><img src="./images/img2.jpg" width="370" alt="Мобильный телефон в левой руке" /></li>
+						<li class="what-item"><img src="./images/img3.jpg" width="370" alt="Планшет в левой руке" /></li>
 					</ul>
 				</section>
 			</div>
 
 			<!-- Our Team section -->
 			<div class="container">
-				<section class="team-section">
+				<section class="section team-section">
 					<h2 class="section-title">Наша команда</h2>
 					<ul class="team-list list">
 						<li class="item">
@@ -123,16 +125,18 @@
 		</main>
 
 		<footer class="footer-section">
-			<div class="container">
-				<!-- logo -->
-				<a href="./index.html" class="logo logo-footer link"><span class="logo-span">Web</span>Studio</a>
-				<address>
-					<ul class="address list">
-						<li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
-						<li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-						<li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-					</ul>
-				</address>
+			<div class="container flexbox">
+				<div class="footer-address">
+					<!-- logo -->
+					<a href="./index.html" class="logo logo-footer link"><span class="logo-span">Web</span>Studio</a>
+					<address>
+						<ul class="address list">
+							<li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
+							<li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+							<li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+						</ul>
+					</address>
+				</div>
 			</div>
 		</footer>
 	</body>
