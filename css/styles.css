@@ -29,13 +29,13 @@ img {
 }
 
 .container {
-	background-color: rgba(210, 180, 140, 0.5);
+	/* background-color: rgba(210, 180, 140, 0.4); */
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	outline: 1px solid red;
+	/* outline: 1px solid red; */
 }
 
 .page-header {
@@ -267,7 +267,7 @@ img {
 	text-align: center;
 }
 
-.team-section {
+.team-background {
 	background-color: var(--second-background-color);
 }
 
@@ -292,12 +292,33 @@ img {
 .footer-address {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	width: calc((100% - 30px * 3) / 4);
 	margin-right: 30px;
 }
 
+/* for next homework */
+.footer-join {
+	width: calc((100% - 30px * 3) / 4);
+	margin-right: 30px;
+}
+
+/* for next homework */
+.footer-submit {
+	width: 570px;
+	width: calc((100% - 30px) / 2);
+}
+
 .logo.logo-footer,
-.address-item {
+.address:first-child {
 	color: var(--footer-logo-color);
+}
+
+.address.list {
+	margin-top: 20px;
+}
+
+.address-item:not(:last-child) {
+	margin-bottom: 9px;
 }
 
 .address {
@@ -317,36 +338,3 @@ img {
 .address .link:focus {
 	color: var(--accent-color);
 }
-
-/* start */
-.experiment-section {
-	width: 1200px;
-	height: 100px;
-	background-color: tan;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-}
-
-.margin-15 {
-	width: 15px;
-	height: 100px;
-	background-color: tomato;
-}
-
-.div-1 {
-	width: 270px;
-	height: 100px;
-}
-
-.div-2 {
-	width: 570px;
-	height: 100px;
-}
-
-.margin-30 {
-	width: 30px;
-	height: 100px;
-	background-color: teal;
-}
-/* end */
