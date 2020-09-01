@@ -308,7 +308,7 @@ img {
 }
 
 .portfolio-item .title {
-	margin: 20px 24px 4px 24px;
+	margin-bottom: 4px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2; /* identical to box height, or 200% */
@@ -317,10 +317,13 @@ img {
 }
 
 .portfolio-item .item-text {
-	margin: 0px 24px 20px 24px;
 	font-size: 16px;
 	line-height: 1.87; /* identical to box height, or 187% */
 	color: var(--primary-text-color);
+}
+
+.card-text {
+	padding: 20px 24px;
 }
 
 .footer-section {
